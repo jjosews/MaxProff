@@ -1,4 +1,18 @@
+$green: #6CAC3D;
+$blue: #2D4872;
+$gray: #C4C4C4;
+$black: #171616;
+$blue-bright: #2D4872;
+$white: #F2F2F2;
+
+%roboto-300{
+  font-family: 'Roboto-Light', sans-serif;
+}
+
+%roboto-400{
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
 %roboto-700{
   font-family: 'Roboto-Bold', sans-serif;
-  font-weight: 700;
 }
