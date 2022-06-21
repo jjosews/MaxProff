@@ -1,15 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
-
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <a class="header__logo" href="#">
+          <img class="header__logo-img" src="images/logo.png" alt=" logo icon">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Цены</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Преимущества</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__top-box">
+          <a class="header__top-phone" href="tel:+72332222222">+7 (233) 222-22-22</a>
+          <p class="header__top-time">
+            08:00 - 22:00, без выходных
+          </p>
+        </div>
+        <button class="header__top-btn">Заказать звонок</button>
+      </div>
+      <div class="header__bottom">
+        <ul class="header__bottom-list">
+          <li class="header__bottom-item dropdown">
+            <button class="header__bottom-item__btn">
+              Ремонт квартир
+              <span>
+                <img src="images/icons/arrow-down.svg" alt="">
+              </span>
+            </button>
+            <div class="dropdown-content">
+              <ul class="dropdown-content__list">
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Черновой</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Косметический</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Капитальный</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Элитный</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">В новостройках</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Студии</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Вторичное жилье</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__bottom-item dropdown">
+            <button class="header__bottom-item__btn">
+              Дизайн интерьера
+              <span>
+                <img src="images/icons/arrow-down.svg" alt="">
+              </span>
+            </button>
+            <div class="dropdown-content">
+              <ul class="dropdown-content__list">
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн кухни</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн спальни</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн гостинной</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн детской</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн санузла</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн коридора</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн балкона</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__bottom-item dropdown">
+            <button class="header__bottom-item__btn">
+              Ремонт комнат
+              <span>
+                <img src="images/icons/arrow-down.svg" alt="">
+              </span>
+            </button>
+            <div class="dropdown-content">
+              <ul class="dropdown-content__list">
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Кухни</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Спальни</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Гостинная</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Детские</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Санузлы</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Коридоры</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Балконы</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__bottom-item">
+            <a class="header__bottom-item__link" href="#">Дома и коттеджи</a>
+          </li>
+          <li class="header__bottom-item">
+            <a class="header__bottom-item__link" href="#">Прочие услуги</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

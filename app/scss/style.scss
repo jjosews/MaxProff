@@ -4,7 +4,139 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  &__top{
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__top-phone{
+    display: inline-block;
+    @extend %roboto-700;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    color: $black;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 2px;
+      left: 0;
+      background-image: url('../images/icons/phone-icon.svg');
+    }
+  }
+  &__top-time{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__top-btn{
+    padding: 13px 22px;
+    @extend %roboto-500;
+    background-color: transparent;
+    color: $green;
+    border: 1px solid $green;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  &__bottom{
+    padding: 22px 0;
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
+  }
+  &__bottom-list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom-item__btn{
+    border: none;
+    background-color: transparent;
+    color: $black;
+    cursor: pointer;
+    @extend %roboto-500;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+  &__bottom-item__link{
+    color: $black;
+    @extend %roboto-500;
+  }
+}
 
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__item{
+    & + .menu__item{
+      margin-left: 24px;
+    }
+  }
+  &__item-link{
+    color: $black;
+    &:hover{
+      color: #234875;
+    }
+  }
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  position: absolute;
+  display: none;
+  top: 47px;
+  padding: 25px 16px 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.25);
+  white-space: nowrap;
+  z-index: -2;
+  &__item{
+    margin-bottom: 20px;
+    position: relative;
+    transition: all .3s ease;
+    &::before{
+      content: '';
+      position: absolute;
+      top: -12px;
+      width: 100%;
+      height: 43px;
+      border: 1px solid $green;
+      border-radius: 3px;
+      z-index: -1;
+      opacity: 0;
+      transition: all .3s ease;
+    }
+    &:hover{
+      &::before{
+        opacity: 1;
+      }
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__item-link{
+    display: block;
+    color: $black;
+    padding: 0 25px;
+    z-index: 2;
+  }
+}
+
+.header__bottom-item__btn:focus ~ .dropdown-content,
+.header__bottom-item__btn:active ~ .dropdown-content,
+.dropdown-content:hover{
+  display: block;
+}
 
 
 
