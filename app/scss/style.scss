@@ -98,7 +98,7 @@
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.25);
   white-space: nowrap;
-  z-index: -2;
+  z-index: 10;
   &__item{
     margin-bottom: 20px;
     position: relative;
@@ -128,7 +128,7 @@
     display: block;
     color: $black;
     padding: 0 25px;
-    z-index: 2;
+    z-index: 12;
   }
 }
 
@@ -136,6 +136,220 @@
 .header__bottom-item__btn:active ~ .dropdown-content,
 .dropdown-content:hover{
   display: block;
+}
+
+.consultation{
+  padding: 24px 0;
+  background-color: $green;
+  color: #fff;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title{
+    @extend %roboto-500;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  &__descr{
+    max-width: 570px;
+  }
+  &__btn{
+    padding: 16px 38px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 31px;
+    border: 2px solid #fff;
+    cursor: pointer;
+  }
+}
+
+.footer{
+  background-color: #2E3648;
+  &__content{
+    border-bottom: 1px solid #CBCBCB;
+  }
+  &__content-inner{
+    display: flex;
+    padding: 35px 0 30px;
+  }
+  &__content-box{
+    margin-right: 150px;
+  }
+  &__box-logo{
+    display: inline-block;
+    margin-bottom: 78px;
+  }
+  &__box-list{
+    margin-top: 11px;
+    display: flex;
+    align-items: start;
+    column-gap: 6px;
+  }
+  &__box-text{
+    color: #cbcbcb;
+    font-size: 13px;
+    line-height: 15px;
+    white-space: nowrap;
+  }
+  &__content-services{
+    margin: 0 170px 0 0;
+    max-width: 140px;
+    width: 100%;
+  }
+  &__services-title{
+    @extend %roboto-700;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $green;
+    margin-bottom: 15px;
+  }
+  &__services-item{
+    margin-bottom: 7px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__services-link{
+    color: #cbcbcb;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  &__links{
+    display: flex;
+    flex-direction: column;
+    margin-right: 240px;
+  }
+  &__links-link{
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    @extend %roboto-700;
+    margin-bottom: 12px;
+  }
+  &__info{
+    color: #fff;
+  }
+  &__info-phone{
+    margin-bottom: 10px;
+    padding-left: 31px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      top: 2px;
+      left: 0;
+      background-image: url('../images/icons/phone-icon-green.svg');
+    }
+  }
+  &__info-phonelink{
+    color: inherit;
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 21px;
+    @extend %roboto-700;
+    display: block;
+  }
+  &__info-phonetime{
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  &__info-link{
+    color: $green;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: underline;
+  }
+  &__info-email{
+    padding-left: 31px;
+    margin-bottom: 16px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      top: -1px;
+      left: 0;
+      background-image: url('../images/icons/email-icon.svg');
+    }
+  }
+  &__info-emaillink{
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+  }
+  &__info-addressbox{
+    padding-left: 31px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      top: -4px;
+      left: 0;
+      background-image: url('../images/icons/mark-icon.svg');
+    }
+  }
+  &__info-address{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+  }
+  &__bottom-copy{
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+  &__copy-text{
+    color: #CBCBCB;
+    font-size: 14px;
+    line-height: 16px;
+    span{
+      padding: 0 4px;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 1px;
+        left: 0;
+        background-image: url('../images/icons/copy-border.svg');
+      }
+    }
+  }
+  &__copy-link{
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: underline;
+  }
+  &__socials-list{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+  &__bottom-offert,
+  &__bottom-maplink{
+    color: #CBCBCB;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 
