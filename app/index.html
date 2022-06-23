@@ -1,15 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <a class="header__logo" href="#">
+          <img class="header__logo-img" src="images/logo.png" alt=" logo icon">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Цены</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Преимущества</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__top-box">
+          <a class="header__top-phone" href="tel:+72332222222">+7 (233) 222-22-22</a>
+          <p class="header__top-time">
+            08:00 - 22:00, без выходных
+          </p>
+        </div>
+        <button class="header__top-btn">Заказать звонок</button>
+      </div>
+      <div class="header__bottom">
+        <ul class="header__bottom-list">
+          <li class="header__bottom-item dropdown">
+            <button class="header__bottom-item__btn">
+              Ремонт квартир
+              <span>
+                <img src="images/icons/arrow-down.svg" alt="">
+              </span>
+            </button>
+            <div class="dropdown-content">
+              <ul class="dropdown-content__list">
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Черновой</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Косметический</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Капитальный</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Элитный</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">В новостройках</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Студии</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Вторичное жилье</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__bottom-item dropdown">
+            <button class="header__bottom-item__btn">
+              Дизайн интерьера
+              <span>
+                <img src="images/icons/arrow-down.svg" alt="">
+              </span>
+            </button>
+            <div class="dropdown-content">
+              <ul class="dropdown-content__list">
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн кухни</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн спальни</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн гостинной</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн детской</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн санузла</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн коридора</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Дизайн балкона</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__bottom-item dropdown">
+            <button class="header__bottom-item__btn">
+              Ремонт комнат
+              <span>
+                <img src="images/icons/arrow-down.svg" alt="">
+              </span>
+            </button>
+            <div class="dropdown-content">
+              <ul class="dropdown-content__list">
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Кухни</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Спальни</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Гостинная</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Детские</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Санузлы</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Коридоры</a>
+                </li>
+                <li class="dropdown-content__item">
+                  <a class="dropdown-content__item-link" href="#">Балконы</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__bottom-item">
+            <a class="header__bottom-item__link" href="#">Дома и коттеджи</a>
+          </li>
+          <li class="header__bottom-item">
+            <a class="header__bottom-item__link" href="#">Прочие услуги</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
 
+  </main>
+  <footer class="footer">
+    <div class="consultation">
+      <div class="container">
+        <div class="consultation__inner">
+          <h2 class="consultation__title">
+            Нужна консультация?
+          </h2>
+          <p class="consultation__descr">
+            Подробно расскажем о наших услугах, видах работ и типовых проектах, рассчитаем стоимость и подготовим
+            индивидуальное предложение!
+          </p>
+          <button class="consultation__btn">
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__content">
+      <div class="container">
+        <div class="footer__content-inner">
+          <div class="footer__content-box">
+            <a class="footer__box-logo" href="#">
+              <img src="images/footer-logo.png" alt="logo icon">
+            </a>
+            <div class="footer__box-payment">
+              <span class="footer__box-text">Любая форма оплаты</span>
+              <ul class="footer__box-list">
+                <li class="footer__box-item">
+                  <img class="footer__box-img" src="images/icons/wallet.svg" alt="wallet icon">
+                </li>
+                <li class="footer__box-item">
+                  <img class="footer__box-img" src="images/icons/sber.png" alt="sber icon">
+                </li>
+                <li class="footer__box-item">
+                  <img class="footer__box-img" src="images/icons/visa.png" alt="visa icon">
+                </li>
+                <li class="footer__box-item">
+                  <img class="footer__box-img" src="images/icons/alpha-bank.png" alt="alpha-bank icon">
+                </li>
+                <li class="footer__box-item">
+                  <img class="footer__box-img" src="images/icons/mastercard.png" alt="mastercard icon">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__content-services">
+            <div class="footer__services">
+              <h3 class="footer__services-title">
+                Наши услуги
+              </h3>
+              <ul class="footer__services-list">
+                <li class="footer__services-item">
+                  <a class="footer__services-link" href="#">Квартиры</a>
+                </li>
+                <li class="footer__services-item">
+                  <a class="footer__services-link" href="#">Коттеджи</a>
+                </li>
+                <li class="footer__services-item">
+                  <a class="footer__services-link" href="#">Таунхаусы</a>
+                </li>
+                <li class="footer__services-item">
+                  <a class="footer__services-link" href="#">Офисы</a>
+                </li>
+                <li class="footer__services-item">
+                  <a class="footer__services-link" href="#">Инженерные системы</a>
+                </li>
+                <li class="footer__services-item">
+                  <a class="footer__services-link" href="#">География работ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__links">
+            <a class="footer__links-link" href="#">Портфолио</a>
+            <a class="footer__links-link" href="#">Стоимость</a>
+            <a class="footer__links-link" href="#">Акции</a>
+            <a class="footer__links-link" href="#">О компании</a>
+            <a class="footer__links-link" href="#">Статьи</a>
+            <a class="footer__links-link" href="#">Контакты</a>
+          </div>
+          <div class="footer__content-info">
+            <div class="footer__info">
+              <div class="footer__info-phone">
+                <a class="footer__info-phonelink" href="tel:+72332222222">+7 (233) 222-22-22</a>
+                <span class="footer__info-phonetime">08:00 - 22:00, без выходных</span>
+                <a class="footer__info-link" href="#">Заказать звонок</a>
+              </div>
+              <div class="footer__info-email">
+                <a class="footer__info-emaillink" href="mailto:Электронная почта @">Электронная почта @</a>
+              </div>
+              <div class="footer__info-addressbox">
+                <address class="footer__info-address">Адрес</address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <div class="footer__bottom-copy">
+            <p class="footer__copy-text">
+              <span>c</span>  2021 «MaxProff»
+            </p>
+            <a class="footer__copy-link" href="#">
+              Правовая информация
+            </a>
+          </div>
+          <div class="footer__bottom-socials">
+            <ul class="footer__socials-list">
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <img src="images/icons/facebook.png" alt="facebook icon">
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <img src="images/icons/youtube.png" alt="youtube icon">
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <img src="images/icons/instagram.png" alt="instagram icon">
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <img src="images/icons/telegram.png" alt="telegram icon">
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <img src="images/icons/vk.png" alt="vk icon">
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <img src="images/icons/odnoklass.png" alt="odnoklass icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom-offert">
+            Сайт не является публичной офертой и носит информационный характер
+          </div>
+          <div class="footer__bottom-map">
+            <a class="footer__bottom-maplink" href="#">Карта сайта</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
