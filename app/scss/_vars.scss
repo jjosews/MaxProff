@@ -24,3 +24,23 @@ $white: #F2F2F2;
   font-family: 'Roboto-Bold', sans-serif;
   font-weight: 700;
 }
+
+%roboto-900{
+  font-family: 'Roboto-Black', sans-serif;
+  font-weight: 900;
+}
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%title{
+  @extend %roboto-700;
+  font-size: 42px;
+  line-height: 49px;
+  display: flex;
+}
