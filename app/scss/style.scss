@@ -515,6 +515,9 @@
     grid-gap: 10px 62px;
     width: 320px;
   }
+  &__filter-label{
+    cursor: pointer;
+  }
   &__filter-input{
     @extend %checkbox-hidden;
     &:checked + .top__filter-checkbox{
@@ -654,6 +657,7 @@
   background-color: $blue-bright;
   border: 2px solid #fff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .irs--flat .irs-handle>i:first-child{
@@ -1414,6 +1418,83 @@
   &__item-descr{
     font-size: 14px;
     line-height: 16px;
+  }
+}
+
+.reviews{
+  padding: 30px 0 70px;
+  background-color: #f8f8f8;
+  &__title{
+    @extend %title;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 24px;
+  }
+  &__item{
+    max-width: 585px;
+    width: 100%;
+    height: 370px;
+    &:hover{
+      .reviews__item-imglink{
+        opacity: 1;
+      }
+    }
+  }
+  &__item-imgbox{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &__item-imglink{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }
+  &__item-info{
+    background-color: #fff;
+    filter: drop-shadow(0px 0px 10px rgba(171, 171, 171, 0.25));
+    padding: 15px 25px;
+  }
+  &__info-box{
+    display: flex;
+  }
+  &__info-title{
+    @extend %roboto-700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $green;
+    text-transform: uppercase;
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+  &__info-num{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__info-address{
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 20px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      top: -2px;
+      left: -2px;
+      background-image: url('../images/icons/map-icon.svg');
+    }
   }
 }
 
