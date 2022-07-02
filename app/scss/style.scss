@@ -1498,6 +1498,143 @@
   }
 }
 
+.team{
+  padding: 75px 0 90px;
+  &__title{
+    @extend %title;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  &__wrapper{
+    margin-bottom: 30px;
+  }
+  &__top-list{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 6px;
+      bottom: 0;
+      background: linear-gradient(0deg, #F2F2F2, #F2F2F2), #D1D1D1;
+      border-radius: 3px;
+    }
+  }
+  &__top-item{
+    @extend %roboto-700;
+    font-size: 18px;
+    line-height: 21px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      z-index: 5;
+      width: 26px;
+      height: 26px;
+      background-color: $white;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__item-imgbox{
+    margin-right: 90px;
+  }
+  &__item-img{
+    max-width: 500px;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+  }
+  &__item{
+    display: flex !important;
+  }
+  &__item-info{
+    margin-top: 80px;
+  }
+  &__info-name{
+    @extend %roboto-700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $green;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__info-position{
+    @extend %roboto-700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 15px;
+  }
+  &__info-descr{
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 18px;
+  }
+  .team__info-list{
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 6px;
+    list-style: inside;
+  }
+  .slick-arrow{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+  }
+  .slick-next{
+    right: -69px;
+  }
+  .slick-prev{
+    left: -69px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    .slick-active{
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $blue-bright;
+        top: 2px;
+        left: 2px;
+      }
+    }
+    li + li{
+      margin-left: 10px;
+    }
+    li{
+      display: block;
+      font-size: 0;
+      width: 18px;
+      height: 18px;
+      background-color: $white;
+      border-radius: 50%;
+      border: 2px solid $blue-bright;
+      cursor: pointer;
+      button{
+        border: none;
+      }
+    }
+  }
+}
+
 
 
 @import 'media';
