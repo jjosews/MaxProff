@@ -702,6 +702,7 @@
     padding: 15px 0 15px 28px;
     display: flex;
     align-items: center;
+    border-radius: 16px 16px 0 0;
   }
   &__top-imgbox{
     width: 56px;
@@ -1670,6 +1671,7 @@
   .swiper-pagination{
     position: inherit;
     margin-top: 35px;
+    margin-bottom: 96px;
   }
 
   .swiper-pagination-bullet{
@@ -1786,6 +1788,109 @@
   &__item-link{
     opacity: 0;
     transition: all .3s ease-in-out;
+  }
+}
+
+.suppliers{
+  padding: 80px 0 100px;
+  background-image: url('../images/suppliers-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(89.58deg, #FFFFFF -24.36%, rgba(255, 255, 255, 0) 180%);
+    z-index: -1;
+  }
+  &__title{
+    @extend %title;
+    justify-content: start;
+    margin-bottom: 18px;
+  }
+  &__text{
+    max-width: 550px;
+    margin-bottom: 50px;
+  }
+  &__inner{
+    display: flex;
+    align-items: center;
+  }
+  &__box{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(215, 215, 215, 0.25);
+    max-width: 580px;
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 28px;
+    margin-right: 40px;
+  }
+  &__box-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+  &__box-descr{
+    max-width: 280px;
+    text-align: right;
+    margin-right: 28px;
+  }
+  &__box-num{
+    display: flex;
+    span{
+      color: #fff;
+      border-radius: 9px;
+      background-color: $blue-bright;
+      @extend %roboto-700;
+      font-size: 42px;
+      line-height: 49px;
+      padding: 0 8px;
+      margin-right: 5px;
+    }
+    p{
+      color: #595959;
+      @extend %roboto-500;
+      line-height: 19px;
+      margin-top: 30px;
+    }
+  }
+  &__button{
+    border-radius: 4px;
+    border: none;
+    background-color: $green;
+    color: #fff;
+    padding: 14px 30px;
+    @extend %roboto-700;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+    &:hover{
+      background-color: #52971F;
+    }
+  }
+  &__partners{
+    width: 100%;
+  }
+  &__partners-box{
+    margin-bottom: 15px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__partners-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
