@@ -1,5 +1,20 @@
 $(function(){
 
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 12,
+    centeredSlides: true,
+    loop: true,
+    allowTouchMove: false,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
   $('.team__items').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
